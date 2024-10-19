@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение шрифтов и стилей -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Имя пользователя" required>
+            <input type="email" id="email" placeholder="Электронная почта" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <select id="role" required>
+                <option value="" disabled selected>Выберите роль</option>
+                <option value="teacher">Учитель</option>
+                <option value="student">Ученик</option>
+            </select>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+        </form>
+    </div>
+    <!-- Подключение JavaScript -->
+    <script src="js/auth.js"></script>
+</body>
+</html>
